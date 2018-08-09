@@ -6,7 +6,7 @@ import secret
 
 class HelloPlugin(Plugin):
     def process_message(self, data):
-        if "애란" in data["text"]:
+        if "유신" in data["text"]:
             self.outputs.append([data["channel"], "불렀어?"])
         elif "주사위" == data["text"]:
             die = str(random.randint(1, 6))
